@@ -2,14 +2,26 @@
  --site-blue: #0B2454;
 }
 
+@font-face {
+  font-family: 'amsterdamtwo_ttf';
+  src: url('./fonts/amsterdam-two-ttf-webfont.woff2') format('woff2'),
+       url('./fonts/amsterdam-two-ttf-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* SITE NAVBAR */
 .navbar {
   background-color: var(--site-blue);
   height: 40px;
 }
 
-.App {
+body {
   background-color: #282c34;
   color: white;
+}
+
+h1 {
+  font-family: "amsterdamtwo_ttf", "Roboto";
 }
 

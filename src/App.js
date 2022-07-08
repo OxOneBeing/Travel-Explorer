@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from "./components/Navbar";
+import { 
+  Button
+} from "@mui/material/"
 
 function App() {
   return (
     <div className="App">
-      
+      <Button variant="contained">Hello World</Button>
     </div>
   );
 }
