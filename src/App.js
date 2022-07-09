@@ -55,10 +55,12 @@ function App() {
             <Box
               sx={{
                 fontFamily: "amsterdamtwo_ttf",
-                padding: '50px 0 0 0',
+                padding: "50px 0 0 0",
               }}
             >
-              <Typography variant="h2">Travel Explorer</Typography>
+              <Typography variant="h2">
+                <strong>Travel Explorer</strong>
+              </Typography>
             </Box>
           </ThemeProvider>
         </Container>

@@ -37,3 +37,16 @@ header {
 .p-text {
   color: #0B2454;
 }
+
+.MuiAppBar-root {
+  background-color: var(--site-blue) !important;
+}
+
+.MuiToolbar-root {
+  font-family: 'Roboto' !important;
+}
+
+.MuiPaper-root {
+  border: 0 !important;
+}
+
