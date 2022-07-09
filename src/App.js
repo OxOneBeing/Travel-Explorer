@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <AppBar position="relative" className="nav">
         <Toolbar>
-          <Typography variant="p">Logo</Typography>
+          <span>Logo</span>
         </Toolbar>
       </AppBar>
       <main>
@@ -55,6 +55,7 @@ function App() {
             <Box
               sx={{
                 fontFamily: "amsterdamtwo_ttf",
+                padding: '50px 0 0 0',
               }}
             >
               <Typography variant="h2">Travel Explorer</Typography>
