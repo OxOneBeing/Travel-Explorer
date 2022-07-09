@@ -16,12 +16,25 @@
   height: 40px;
 }
 
-body {
+/* body {
   background-color: #282c34;
   color: white;
+} */
+
+header {
+  background-color: #0B2454;
 }
 
-h1 {
-  font-family: "amsterdamtwo_ttf", "Roboto";
+.grid-item {
+  border: 0;
+}
+
+.h-text {
+  font-family: "amsterdamtwo_ttf", sans-serif, arial;
+  color: #0B2454;
+}
+
+.p-text {
+  color: #0B2454;
 }
 
