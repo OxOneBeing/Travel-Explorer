@@ -8,7 +8,10 @@ import {
   CssBaseline,
   Grid,
   Paper,
+  ImageList,
+  ImageListItem
 } from "@mui/material/";
+// import { InfoIcon } from "@mui/icons-material/";
 import { styled, ThemeProvider, createTheme } from "@mui/material/styles";
 import amsterdamtwo_ttf from "./fonts/amsterdam-two-ttf-webfont.woff";
 
@@ -17,6 +20,14 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
+
+const ImageItem = styled()(({ theme }) => ({
+  backgroundColor: '#0B2454',
+  // ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "justify",
   color: theme.palette.text.secondary,
 }));
 
@@ -39,6 +50,29 @@ const theme = createTheme({
     },
   },
 });
+
+const itemData = [
+  {
+    img: "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    title: "LONDON",
+    rows: 2,
+    cols: 2,
+    featured: true,
+  },
+  {
+    img: "https://www.cia-france.com/media/1554/tour-eiffel_720x500.jpg",
+    title: "PARIS"
+  },
+  {
+    img: "https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg",
+    title: "DUBAI"
+  },
+  {
+    img: "https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg",
+    title: "NEW YORK",
+    cols: 2,
+  }
+];
 
 function App() {
   return (
@@ -199,11 +233,41 @@ function App() {
                     Explore our great selection of destinations around the
                     world.
                   </Typography>
+                  <Box>
+                    <Grid container spacing={2}>
+                      <Grid item xs={12} sm={4} md={4} lg={4} className="grid-item">
+                        <ImageItem>
+                          <ImageList sx={{ width: 500, height: 450 }}>
+                            <ImageListItem>
+                              <img
+                                src={itemData[0].img}
+                                srcSet={itemData[0].img}
+                                alt={itemData[0].title}
+                              />
+                            </ImageListItem>
+                          </ImageList>
+                        </ImageItem>
+                        <ImageItem>
+
+                        </ImageItem>
+                        <ImageItem>
+
+                        </ImageItem>
+                        <ImageItem>
+
+                        </ImageItem>
+                      </Grid>
+                    </Grid>
+                  </Box>
                 </Item>
               </Grid>
             </Grid>
           </Box>
         </Container>
+
+        <Box maxWidth={false} sx={{ bgcolor: '#0B2454' }}>
+          
+        </Box>
       </main>
     </div>
   );
