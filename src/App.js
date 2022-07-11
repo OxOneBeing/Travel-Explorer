@@ -45,66 +45,63 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Box sx={{height: "100vh", border:"1px solid #000000"}}>
-        <AppBar position="relative" sx={{
-          "font-family":"Roboto",
-          color:"#0B2454",
-          // "background-color":"#0B2454"
-          "background-color":"transparent"
-          }}>
-          <Toolbar>
-            <span>Logo</span>
-          </Toolbar>
-        </AppBar>
-        <Container>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Box sx={{fontFamily: "amsterdamtwo_ttf", color:"#0B2454", pt:"50px"}}>
-              <Typography variant="h3">
-                <strong>Travel Explorer</strong>
-              </Typography>
-            </Box>
-          </ThemeProvider>
-        </Container>
+        <Box sx={{height: "100vh"}}>
+          <AppBar position="relative" sx={{fontFamily:"Roboto", color:"#FFFFFF", backgroundColor:"#0B2454"}}>
+            <Toolbar>
+              <span className="site-brand">Logo</span>
+            </Toolbar>
+          </AppBar>
+          <Container>
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+              <Box sx={{fontFamily: "amsterdamtwo_ttf", color:"#0B2454", pt:"50px"}}>
+                <Typography variant="h3">
+                  <strong>Travel Explorer</strong>
+                </Typography>
+              </Box>
+            </ThemeProvider>
+          </Container>
         </Box>
+
         <Container>
-          <Box sx={{flexGrow:1}}>
+
+          <Box sx={{flexGrow: 1, color:"#0B2454"}}>
             <Box sx={{pt:8, pb:6}}>
-              <Typography variant="h4" align="center" gutterBottom sx={{fontWeight: "bold"}}>
+              <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>
                 Why book with us?
               </Typography>
             </Box>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={4} md={4} lg={4}>
                 <Item elevation={0}>
-                  <Typography variant="h5">
+              <Typography variant="h5" sx={{fontSize: "18px"}}>
                     Hassle-free Booking
                   </Typography>
-                  <Typography variant="body2" className="p-text">
+                  <Typography variant="body2" sx={{fontSize: "16px"}}>
                     Find all what you need for a peaceful travel in one place,
                     so why search somewhere else? Flight to accommodation,
                     transfers to holiday packages and what not?
                   </Typography>
                 </Item>
               </Grid>
-              <Grid item xs={12} sm={4} md={4} lg={4} className="grid-item">
+              <Grid item xs={12} sm={4} md={4} lg={4}>
                 <Item elevation={0}>
-                  <Typography variant="h5" className="h-text">
+                  <Typography variant="h5" sx={{fontSize: "18px"}}>
                     Best Travel Agent
                   </Typography>
-                  <Typography variant="body2" className="p-text">
+                  <Typography variant="body2" sx={{fontSize: "16px"}}>
                     Find all what you need for a peaceful travel in one place,
                     so why search somewhere else? Flight to accommodation,
                     transfers to holiday packages and what not?
                   </Typography>
                 </Item>
               </Grid>
-              <Grid item xs={12} sm={4} md={4} lg={4} className="grid-item">
+              <Grid item xs={12} sm={4} md={4} lg={4}>
                 <Item elevation={0}>
-                  <Typography variant="h5" className="h-text">
+                  <Typography variant="h5" sx={{fontSize: "18px"}}>
                     Expert Advice
                   </Typography>
-                  <Typography variant="body2" className="p-text">
+                  <Typography variant="body2" sx={{fontSize: "16px"}}>
                     Our Travel Experts begin their journey with you at the very
                     moment when you make an inquiry through one of our multiple
                     channels and continue until you reach home safe.
@@ -114,24 +111,21 @@ function App() {
             </Grid>
           </Box>
 
-          <Box sx={{flexGrow: 1}}>
+          <Box sx={{flexGrow: 1, color:"#0B2454"}}>
             <Box sx={{pt: 8, pb: 6}}>
               <Typography
                 component="h1"
                 variant="h4"
                 align="center"
-                gutterBottom
-                sx={{
-                  "font-weight": "bold",
-                }}
+                sx={{fontWeight: "bold"}}
               >
                 Corporate Travel Management
               </Typography>
             </Box>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} lg={12} className="grid-item">
-                <Item elevation={0} sx={{ "text-align": "justify" }}>
-                  <Typography variant="body2" className="p-text">
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <Item elevation={0} sx={{textAlign: "justify", fontSize: "30px"}}>
+                  <Typography variant="body2" sx={{fontSize: "16px"}}>
                     We offer tailored travel management services to a wide range
                     of businesses – both large and small – throughout Nigeria
                     and the UK.
@@ -167,7 +161,7 @@ function App() {
             </Grid>
           </Box>
 
-          <Box sx={{ flexGrow: 1 }}>
+          <Box sx={{ flexGrow: 1}}>
             <Box
               sx={{
                 pt: 8,
@@ -177,30 +171,26 @@ function App() {
               <Typography
                 variant="h4"
                 align="center"
-                gutterBottom
-                sx={{
-                  "font-weight": "bold",
-                }}
+                sx={{fontWeight: "bold", color:"#0B2454"}}
               >
                 Top Destinations
               </Typography>
             </Box>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={12} lg={12} className="grid-item">
+            <Grid container>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
                 <Item elevation={0}>
-                  <Typography variant="body2" className="p-text">
+                  <Typography variant="body2" sx={{color:"#0B2454", fontSize: "16px"}}>
                     Explore our great selection of destinations around the
                     world.
                   </Typography>
                   <Box>
-                    <Grid container spacing={4} sx={{ pt: 5, pb: 5 }}>
+                    <Grid container spacing={0} sx={{ pt: 5, pb: 5 }}>
                       <Grid
                         item
                         xs={12}
                         sm={12}
                         md={3}
                         lg={3}
-                        className="grid-item"
                       >
                         <img
                           src={
@@ -215,7 +205,6 @@ function App() {
                         sm={12}
                         md={3}
                         lg={3}
-                        className="grid-item"
                       >
                         <img
                           src="https://www.cia-france.com/media/1554/tour-eiffel_720x500.jpg"
@@ -228,7 +217,6 @@ function App() {
                         sm={12}
                         md={3}
                         lg={3}
-                        className="grid-item"
                       >
                         <img
                           src="https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg"
@@ -241,11 +229,10 @@ function App() {
                         sm={12}
                         md={3}
                         lg={3}
-                        className="grid-item"
                       >
                         <img
-                          src="https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg"
-                          alt="DUBAI"
+                          src="https://www.jigsawpuzzlesdirect.co.uk/prodhuge/CL31814.jpg"
+                          alt="NEW YORK"
                         />
                       </Grid>
                     </Grid>
@@ -256,7 +243,11 @@ function App() {
           </Box>
         </Container>
 
-        <Box maxWidth={false} sx={{ bgcolor: "#0B2454" }}></Box>
+        <Box sx={{ padding: "30px", bgcolor: "#0B2454", color: "#ffffff", fontFamily: "Roboto", }}>
+          <Container>
+            
+          </Container>
+        </Box>
       </main>
     </div>
   );
