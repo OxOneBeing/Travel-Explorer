@@ -11,10 +11,10 @@ import {
 } from "@mui/material/";
 // import { InfoIcon } from "@mui/icons-material/";
 // import svgImg from "./images/svgImg.svg"
-import certifiedByIATA from "./images/certified.png"
-import logo from "./images/logo.png"
-import logoWhiteBG from "./images/logoWhiteBG.jpeg"
-import initialBgImg from "./images/initialBgImg.jpg"
+import certifiedByIATA from "./images/certified.png";
+import logo from "./images/logo.png";
+import logoWhiteBG from "./images/logoWhiteBG.jpeg";
+import initialBgImg from "./images/initialBgImg.jpg";
 import { styled, ThemeProvider, createTheme } from "@mui/material/styles";
 import amsterdamtwo_ttf from "./fonts/amsterdam-two-ttf-webfont.woff";
 
@@ -57,17 +57,33 @@ function App() {
             backgroundColor: "rgba(0, 0, 0, 0.7)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundBlendMode: "soft-light"
-          }}>
-          <AppBar position="relative" sx={{fontFamily:"Roboto", backgroundColor:"#FFFFFF", color:"#0B2454 "}}>
+            backgroundBlendMode: "soft-light",
+          }}
+        >
+          <AppBar
+            position="relative"
+            sx={{
+              fontFamily: "Roboto",
+              backgroundColor: "#FFFFFF",
+              color: "#0B2454 ",
+            }}
+          >
             <Toolbar>
-              <a href="index.html"><img className="topLogo" src={logo} alt="Top logo" /></a>
+              <a href="index.html">
+                <img className="topLogo" src={logo} alt="Top logo" />
+              </a>
             </Toolbar>
           </AppBar>
           <Container>
             <ThemeProvider theme={theme}>
               <CssBaseline />
-              <Box sx={{fontFamily: "amsterdamtwo_ttf", color:"#FFFFFF", pt:"50px"}}>
+              <Box
+                sx={{
+                  fontFamily: "amsterdamtwo_ttf",
+                  color: "#FFFFFF",
+                  pt: "50px",
+                }}
+              >
                 <Typography variant="h3">
                   <strong>Travel Explorer</strong>
                 </Typography>
@@ -77,20 +93,23 @@ function App() {
         </Box>
 
         <Container>
-
-          <Box sx={{flexGrow: 1, color:"#0B2454"}}>
-            <Box sx={{pt:8, pb:6}}>
-              <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>
+          <Box sx={{ flexGrow: 1, color: "#0B2454" }}>
+            <Box sx={{ pt: 8, pb: 6 }}>
+              <Typography
+                variant="h4"
+                align="center"
+                sx={{ fontWeight: "bold" }}
+              >
                 Why book with us?
               </Typography>
             </Box>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={4} md={4} lg={4}>
                 <Item elevation={0}>
-              <Typography variant="h5" sx={{fontSize: "18px"}}>
+                  <Typography variant="h5" sx={{ fontSize: "18px" }}>
                     Hassle-free Booking
                   </Typography>
-                  <Typography variant="body2" sx={{fontSize: "16px"}}>
+                  <Typography variant="body2" sx={{ fontSize: "16px" }}>
                     Find all what you need for a peaceful travel in one place,
                     so why search somewhere else? Flight to accommodation,
                     transfers to holiday packages and what not?
@@ -99,10 +118,10 @@ function App() {
               </Grid>
               <Grid item xs={12} sm={4} md={4} lg={4}>
                 <Item elevation={0}>
-                  <Typography variant="h5" sx={{fontSize: "18px"}}>
+                  <Typography variant="h5" sx={{ fontSize: "18px" }}>
                     Best Travel Agent
                   </Typography>
-                  <Typography variant="body2" sx={{fontSize: "16px"}}>
+                  <Typography variant="body2" sx={{ fontSize: "16px" }}>
                     Find all what you need for a peaceful travel in one place,
                     so why search somewhere else? Flight to accommodation,
                     transfers to holiday packages and what not?
@@ -111,10 +130,10 @@ function App() {
               </Grid>
               <Grid item xs={12} sm={4} md={4} lg={4}>
                 <Item elevation={0}>
-                  <Typography variant="h5" sx={{fontSize: "18px"}}>
+                  <Typography variant="h5" sx={{ fontSize: "18px" }}>
                     Expert Advice
                   </Typography>
-                  <Typography variant="body2" sx={{fontSize: "16px"}}>
+                  <Typography variant="body2" sx={{ fontSize: "16px" }}>
                     Our Travel Experts begin their journey with you at the very
                     moment when you make an inquiry through one of our multiple
                     channels and continue until you reach home safe.
@@ -124,21 +143,24 @@ function App() {
             </Grid>
           </Box>
 
-          <Box sx={{flexGrow: 1, color:"#0B2454"}}>
-            <Box sx={{pt: 8, pb: 6}}>
+          <Box sx={{ flexGrow: 1, color: "#0B2454" }}>
+            <Box sx={{ pt: 8, pb: 6 }}>
               <Typography
                 component="h1"
                 variant="h4"
                 align="center"
-                sx={{fontWeight: "bold"}}
+                sx={{ fontWeight: "bold" }}
               >
                 Corporate Travel Management
               </Typography>
             </Box>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={12} md={12} lg={12}>
-                <Item elevation={0} sx={{textAlign: "justify", fontSize: "30px"}}>
-                  <Typography variant="body2" sx={{fontSize: "16px"}}>
+                <Item
+                  elevation={0}
+                  sx={{ textAlign: "justify", fontSize: "30px" }}
+                >
+                  <Typography variant="body2" sx={{ fontSize: "16px" }}>
                     We offer tailored travel management services to a wide range
                     of businesses – both large and small – throughout Nigeria
                     and the UK.
@@ -174,32 +196,57 @@ function App() {
             </Grid>
           </Box>
 
-          <Box sx={{ flexGrow: 1}}>
-            <Box sx={{ pt: 8, pb: 6}} >
-              <Typography variant="h4" align="center" sx={{fontWeight: "bold", color:"#0B2454"}}>
+          <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ pt: 8, pb: 6 }}>
+              <Typography
+                variant="h4"
+                align="center"
+                sx={{ fontWeight: "bold", color: "#0B2454" }}
+              >
                 Top Destinations
               </Typography>
             </Box>
             <Grid container>
               <Grid item xs={12} sm={12} md={12} lg={12}>
                 <Item elevation={0}>
-                  <Typography variant="body2" sx={{color:"#0B2454", fontSize: "16px"}}>
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "#0B2454", fontSize: "16px" }}
+                  >
                     Explore our great selection of destinations around the
                     world.
                   </Typography>
                   <Box>
                     <Grid container spacing={0} sx={{ pt: 5, pb: 5 }}>
                       <Grid item xs={12} sm={12} md={3} lg={3}>
-                        <img className="bottomImg" src={"https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80" } alt={"LONDON"} />
+                        <img
+                          className="bottomImg"
+                          src={
+                            "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                          }
+                          alt={"LONDON"}
+                        />
                       </Grid>
-                      <Grid item xs={12} sm={12} md={3} lg={3} >
-                        <img className="bottomImg" src="https://www.cia-france.com/media/1554/tour-eiffel_720x500.jpg" alt="PARIS" />
+                      <Grid item xs={12} sm={12} md={3} lg={3}>
+                        <img
+                          className="bottomImg"
+                          src="https://www.cia-france.com/media/1554/tour-eiffel_720x500.jpg"
+                          alt="PARIS"
+                        />
                       </Grid>
-                      <Grid item xs={12} sm={12} md={3} lg={3} >
-                        <img className="bottomImg" src="https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg" alt="DUBAI" />
+                      <Grid item xs={12} sm={12} md={3} lg={3}>
+                        <img
+                          className="bottomImg"
+                          src="https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg"
+                          alt="DUBAI"
+                        />
                       </Grid>
-                      <Grid item xs={12} sm={12} md={3} lg={3} >
-                        <img className="bottomImg" src="https://www.jigsawpuzzlesdirect.co.uk/prodhuge/CL31814.jpg" alt="NEW YORK" />
+                      <Grid item xs={12} sm={12} md={3} lg={3}>
+                        <img
+                          className="bottomImg"
+                          src="https://www.jigsawpuzzlesdirect.co.uk/prodhuge/CL31814.jpg"
+                          alt="NEW YORK"
+                        />
                       </Grid>
                     </Grid>
                   </Box>
@@ -208,41 +255,85 @@ function App() {
             </Grid>
           </Box>
         </Container>
-        <Box sx={{ height: "40vh", bgcolor: "#0B2454", color: "#ffffff", fontFamily: "Roboto", }}>
+        <Box
+          sx={{
+            height: "40vh",
+            bgcolor: "#0B2454",
+            color: "#ffffff",
+            fontFamily: "Roboto",
+          }}
+        >
           <Container>
-            <Grid container spacing={2} sx={{pt:8, pb:8}}>
+            <Grid container spacing={2} sx={{ pt: 8, pb: 8 }}>
               <Grid item xs={6} sm={6} md={3} lg={3}>
                 <img className="logoWhiteBG" src={logoWhiteBG} alt="Logo" />
-                <Typography sx={{fontSize:"12px", pr:3}} variant="subtitle1">
-                  Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!
+                <Typography
+                  sx={{ fontSize: "12px", pr: 3 }}
+                  variant="subtitle1"
+                >
+                  Booking, reviews and advices on hotels, resorts, flights,
+                  vacation rentals, travel packages, and lots more!
                 </Typography>
-                <Typography variant="H5">
-                  LET'S CONNECT ON SOCIALS
-                </Typography>
+                <Typography variant="H5">LET'S CONNECT ON SOCIALS</Typography>
               </Grid>
               <Grid item xs={6} sm={6} md={3} lg={3}>
-                <Typography sx={{fontSize: "1.5rem"}} variant="h6">
+                <Typography sx={{ fontSize: "1.5rem" }} variant="h6">
                   CERTIFIED BY
                 </Typography>
-                <img className="certified" src={certifiedByIATA} alt="Certified by IATA" />
+                <img
+                  className="certified"
+                  src={certifiedByIATA}
+                  alt="Certified by IATA"
+                />
               </Grid>
               <Grid item xs={6} sm={6} md={3} lg={3}>
                 <Box>
-                  <a className="site-links" href="index.html">About Us</a><br />
-                  <a className="site-links" href="index.html">Services</a><br />
-                  <a className="site-links" href="index.html">Corporate Profile</a><br />
-                  <a className="site-links" href="index.html">Corporate Bookings</a><br />
-                  <a className="site-links" href="index.html">Press Room</a><br />
-                  <a className="site-links" href="index.html">Terms and Conditions</a><br />
-                  <a className="site-links" href="index.html">Contact Us</a>
+                  <a className="site-links" href="index.html">
+                    About Us
+                  </a>
+                  <br />
+                  <a className="site-links" href="index.html">
+                    Services
+                  </a>
+                  <br />
+                  <a className="site-links" href="index.html">
+                    Corporate Profile
+                  </a>
+                  <br />
+                  <a className="site-links" href="index.html">
+                    Corporate Bookings
+                  </a>
+                  <br />
+                  <a className="site-links" href="index.html">
+                    Press Room
+                  </a>
+                  <br />
+                  <a className="site-links" href="index.html">
+                    Terms and Conditions
+                  </a>
+                  <br />
+                  <a className="site-links" href="index.html">
+                    Contact Us
+                  </a>
                 </Box>
               </Grid>
               <Grid item xs={6} sm={6} md={3} lg={3}>
                 <Box>
                   <Typography variant="h4">Have Questions?</Typography>
-                  <a className="site-links" href="tel:01494616021">01494-61-6021</a><br />
-                  <a className="site-links" href="mailto:uk@mytravelexplorer.com">uk@mytravelexplorer.com</a><br />
-                  <Typography variant="subtitle1">24/7 Dedicated Customer Support</Typography>
+                  <a className="site-links" href="tel:01494616021">
+                    01494-61-6021
+                  </a>
+                  <br />
+                  <a
+                    className="site-links"
+                    href="mailto:uk@mytravelexplorer.com"
+                  >
+                    uk@mytravelexplorer.com
+                  </a>
+                  <br />
+                  <Typography variant="subtitle1">
+                    24/7 Dedicated Customer Support
+                  </Typography>
                   <small>&copy; Copyright Travel Explorer Limited</small>
                 </Box>
               </Grid>
