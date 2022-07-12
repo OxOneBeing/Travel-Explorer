@@ -257,7 +257,6 @@ function App() {
         </Container>
         <Box
           sx={{
-            height: "40vh",
             bgcolor: "#0B2454",
             color: "#ffffff",
             fontFamily: "Roboto",
