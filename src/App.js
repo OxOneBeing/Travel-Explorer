@@ -10,6 +10,9 @@ import {
   Paper,
 } from "@mui/material/";
 // import { InfoIcon } from "@mui/icons-material/";
+// import svgImg from "./images/svgImg.svg"
+import certifiedByIATA from "./images/certified.png"
+import logoWhiteBG from "./images/logoWhiteBG.jpeg"
 import { styled, ThemeProvider, createTheme } from "@mui/material/styles";
 import amsterdamtwo_ttf from "./fonts/amsterdam-two-ttf-webfont.woff";
 
@@ -185,55 +188,17 @@ function App() {
                   </Typography>
                   <Box>
                     <Grid container spacing={0} sx={{ pt: 5, pb: 5 }}>
-                      <Grid
-                        item
-                        xs={12}
-                        sm={12}
-                        md={3}
-                        lg={3}
-                      >
-                        <img
-                          src={
-                            "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-                          }
-                          alt={"LONDON"}
-                        />
+                      <Grid item xs={12} sm={12} md={3} lg={3}>
+                        <img className="bottomImg" src={"https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80" } alt={"LONDON"} />
                       </Grid>
-                      <Grid
-                        item
-                        xs={12}
-                        sm={12}
-                        md={3}
-                        lg={3}
-                      >
-                        <img
-                          src="https://www.cia-france.com/media/1554/tour-eiffel_720x500.jpg"
-                          alt="PARIS"
-                        />
+                      <Grid item xs={12} sm={12} md={3} lg={3} >
+                        <img className="bottomImg" src="https://www.cia-france.com/media/1554/tour-eiffel_720x500.jpg" alt="PARIS" />
                       </Grid>
-                      <Grid
-                        item
-                        xs={12}
-                        sm={12}
-                        md={3}
-                        lg={3}
-                      >
-                        <img
-                          src="https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg"
-                          alt="DUBAI"
-                        />
+                      <Grid item xs={12} sm={12} md={3} lg={3} >
+                        <img className="bottomImg" src="https://cdn.britannica.com/43/134743-050-D0625A44/train-first-Dubai-emirate-rapid-transit-line-kind-Sept-10-2009.jpg" alt="DUBAI" />
                       </Grid>
-                      <Grid
-                        item
-                        xs={12}
-                        sm={12}
-                        md={3}
-                        lg={3}
-                      >
-                        <img
-                          src="https://www.jigsawpuzzlesdirect.co.uk/prodhuge/CL31814.jpg"
-                          alt="NEW YORK"
-                        />
+                      <Grid item xs={12} sm={12} md={3} lg={3} >
+                        <img className="bottomImg" src="https://www.jigsawpuzzlesdirect.co.uk/prodhuge/CL31814.jpg" alt="NEW YORK" />
                       </Grid>
                     </Grid>
                   </Box>
@@ -243,9 +208,45 @@ function App() {
           </Box>
         </Container>
 
-        <Box sx={{ padding: "30px", bgcolor: "#0B2454", color: "#ffffff", fontFamily: "Roboto", }}>
+        <Box sx={{ height: "40vh", bgcolor: "#0B2454", color: "#ffffff", fontFamily: "Roboto", }}>
           <Container>
-            
+            <Grid container sx={{pt:8, pb:8}}>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <img className="svgImg" src={logoWhiteBG} alt="Logo" />
+                <Typography variant="subtitle1">
+                  Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!
+                </Typography>
+                <Typography variant="H5">
+                  LET'S CONNET ON SOCIAL
+                </Typography>
+              </Grid>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <Typography sx={{fontSize: "1.5rem"}} variant="h6">
+                  CERTIFIED BY
+                </Typography>
+                < img className="certified" src={certifiedByIATA} alt="Certified by IATA" />
+              </Grid>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <Box>
+                  <a href="">About Us</a>
+                  <a href="">Services</a>
+                  <a href="">Corporate Profile</a>
+                  <a href="">Corporate Bookings</a>
+                  <a href="">Press Room</a>
+                  <a href="">Terms and Conditions</a>
+                  <a href="">Contact Us</a>
+                </Box>
+              </Grid>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <Box>
+                  <Typography variant="h4">Have Questions?</Typography>
+                  <a href="tel:01494616021">01494-61-6021</a>
+                  <a href="mailto:uk@mytravelexplorer.com">uk@mytravelexplorer.com</a>
+                  <Typography variant="subtitle1">24/7 Dedicated Customer Support</Typography>
+                  <small>&copy; Copyright Travel Explorer Limited</small>
+                </Box>
+              </Grid>
+            </Grid>
           </Container>
         </Box>
       </main>
