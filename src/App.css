@@ -2,6 +2,10 @@
  --site-blue: #0B2454;
 }
 
+.topLogo {
+  width: 150px;
+}
+
 .bottomImg {
   width: 100%;
   max-width: 100%;

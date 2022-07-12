@@ -12,7 +12,9 @@ import {
 // import { InfoIcon } from "@mui/icons-material/";
 // import svgImg from "./images/svgImg.svg"
 import certifiedByIATA from "./images/certified.png"
+import logo from "./images/logo.png"
 import logoWhiteBG from "./images/logoWhiteBG.jpeg"
+import initialBgImg from "./images/initialBgImg.jpg"
 import { styled, ThemeProvider, createTheme } from "@mui/material/styles";
 import amsterdamtwo_ttf from "./fonts/amsterdam-two-ttf-webfont.woff";
 
@@ -48,16 +50,24 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Box sx={{height: "100vh"}}>
-          <AppBar position="relative" sx={{fontFamily:"Roboto", color:"#FFFFFF", backgroundColor:"#0B2454"}}>
+        <Box
+          sx={{
+            height: "100vh",
+            backgroundImage: `url(${initialBgImg})`,
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundBlendMode: "soft-light"
+          }}>
+          <AppBar position="relative" sx={{fontFamily:"Roboto", backgroundColor:"#FFFFFF", color:"#0B2454 "}}>
             <Toolbar>
-              <span className="site-brand">Logo</span>
+              <a href="index.html"><img className="topLogo" src={logo} alt="Top logo" /></a>
             </Toolbar>
           </AppBar>
           <Container>
             <ThemeProvider theme={theme}>
               <CssBaseline />
-              <Box sx={{fontFamily: "amsterdamtwo_ttf", color:"#0B2454", pt:"50px"}}>
+              <Box sx={{fontFamily: "amsterdamtwo_ttf", color:"#FFFFFF", pt:"50px"}}>
                 <Typography variant="h3">
                   <strong>Travel Explorer</strong>
                 </Typography>
