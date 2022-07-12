@@ -165,17 +165,8 @@ function App() {
           </Box>
 
           <Box sx={{ flexGrow: 1}}>
-            <Box
-              sx={{
-                pt: 8,
-                pb: 6,
-              }}
-            >
-              <Typography
-                variant="h4"
-                align="center"
-                sx={{fontWeight: "bold", color:"#0B2454"}}
-              >
+            <Box sx={{ pt: 8, pb: 6}} >
+              <Typography variant="h4" align="center" sx={{fontWeight: "bold", color:"#0B2454"}}>
                 Top Destinations
               </Typography>
             </Box>
@@ -207,49 +198,48 @@ function App() {
             </Grid>
           </Box>
         </Container>
-
+        <Box sx={{ height: "40vh", bgcolor: "#0B2454", color: "#ffffff", fontFamily: "Roboto", }}>
+          <Container>
+            <Grid container spacing={2} sx={{pt:8, pb:8}}>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <img className="logoWhiteBG" src={logoWhiteBG} alt="Logo" />
+                <Typography sx={{fontSize:"12px", pr:3}} variant="subtitle1">
+                  Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!
+                </Typography>
+                <Typography variant="H5">
+                  LET'S CONNECT ON SOCIALS
+                </Typography>
+              </Grid>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <Typography sx={{fontSize: "1.5rem"}} variant="h6">
+                  CERTIFIED BY
+                </Typography>
+                <img className="certified" src={certifiedByIATA} alt="Certified by IATA" />
+              </Grid>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <Box>
+                  <a className="site-links" href="index.html">About Us</a><br />
+                  <a className="site-links" href="index.html">Services</a><br />
+                  <a className="site-links" href="index.html">Corporate Profile</a><br />
+                  <a className="site-links" href="index.html">Corporate Bookings</a><br />
+                  <a className="site-links" href="index.html">Press Room</a><br />
+                  <a className="site-links" href="index.html">Terms and Conditions</a><br />
+                  <a className="site-links" href="index.html">Contact Us</a>
+                </Box>
+              </Grid>
+              <Grid item xs={6} sm={6} md={3} lg={3}>
+                <Box>
+                  <Typography variant="h4">Have Questions?</Typography>
+                  <a className="site-links" href="tel:01494616021">01494-61-6021</a><br />
+                  <a className="site-links" href="mailto:uk@mytravelexplorer.com">uk@mytravelexplorer.com</a><br />
+                  <Typography variant="subtitle1">24/7 Dedicated Customer Support</Typography>
+                  <small>&copy; Copyright Travel Explorer Limited</small>
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </Box>
       </main>
-      <Box sx={{ height: "40vh", bgcolor: "#0B2454", color: "#ffffff", fontFamily: "Roboto", }}>
-        <Container>
-          <Grid container sx={{pt:8, pb:8}}>
-            <Grid item xs={6} sm={6} md={3} lg={3}>
-              <img className="logoWhiteBG" src={logoWhiteBG} alt="Logo" />
-              <Typography sx={{fontSize:"12px", pr:3}} variant="subtitle1">
-                Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!
-              </Typography>
-              <Typography variant="H5">
-                LET'S CONNECT ON SOCIALS
-              </Typography>
-            </Grid>
-            <Grid item xs={6} sm={6} md={3} lg={3}>
-              <Typography sx={{fontSize: "1.5rem"}} variant="h6">
-                CERTIFIED BY
-              </Typography>
-              <img className="certified" src={certifiedByIATA} alt="Certified by IATA" />
-            </Grid>
-            <Grid item xs={6} sm={6} md={3} lg={3}>
-              <Box>
-                <a className="site-links" href="index.html">About Us</a><br />
-                <a className="site-links" href="index.html">Services</a><br />
-                <a className="site-links" href="index.html">Corporate Profile</a><br />
-                <a className="site-links" href="index.html">Corporate Bookings</a><br />
-                <a className="site-links" href="index.html">Press Room</a><br />
-                <a className="site-links" href="index.html">Terms and Conditions</a><br />
-                <a className="site-links" href="index.html">Contact Us</a>
-              </Box>
-            </Grid>
-            <Grid item xs={6} sm={6} md={3} lg={3}>
-              <Box>
-                <Typography variant="h4">Have Questions?</Typography>
-                <a className="site-links" href="tel:01494616021">01494-61-6021</a><br />
-                <a className="site-links" href="mailto:uk@mytravelexplorer.com">uk@mytravelexplorer.com</a><br />
-                <Typography variant="subtitle1">24/7 Dedicated Customer Support</Typography>
-                <small>&copy; Copyright Travel Explorer Limited</small>
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
     </div>
   );
 }
