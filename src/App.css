@@ -15,5 +15,15 @@
 }
 
 .logoWhiteBG {
-  width: 200px;
+  width: 250px;
 }
+
+.site-links {
+  color: #f7910c;
+}
+
+.site-links:hover {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
